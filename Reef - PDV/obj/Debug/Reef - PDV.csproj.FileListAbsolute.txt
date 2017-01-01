@@ -1,1 +1,19 @@
 c:\users\alejandro\documents\visual studio 2015\Projects\Reef - PDV\Reef - PDV\bin\Debug\Reef - PDV.exe.config
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\bin\Debug\Reef - PDV.exe
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\bin\Debug\Reef - PDV.pdb
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.csprojResolveAssemblyReference.cache
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef___PDV.Login.resources
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef___PDV.Properties.Resources.resources
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.csproj.GenerateResource.Cache
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.exe
+C:\Users\Alejandro\Documents\Visual Studio 2015\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.pdb
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\bin\Debug\Reef - PDV.exe.config
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.exe
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.pdb
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\bin\Debug\Reef - PDV.exe
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\bin\Debug\Reef - PDV.pdb
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.csprojResolveAssemblyReference.cache
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef___PDV.Login.resources
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef___PDV.Properties.Resources.resources
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.csproj.GenerateResource.Cache
