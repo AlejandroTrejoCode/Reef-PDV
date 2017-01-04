@@ -63,6 +63,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -107,6 +116,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ReefIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReefStudiosLogoWeb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReefStudiosLogoWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VenderBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductosBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReporteBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InventarioBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorteBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EstadisticasBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecomendacionesBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

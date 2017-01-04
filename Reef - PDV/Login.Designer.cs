@@ -31,47 +31,47 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.PanelHeader1 = new System.Windows.Forms.Panel();
+            this.LblAMPM = new System.Windows.Forms.Label();
             this.LblHours = new System.Windows.Forms.Label();
             this.PanelDate = new System.Windows.Forms.Panel();
+            this.PbCalendar = new System.Windows.Forms.PictureBox();
             this.LblDate = new System.Windows.Forms.Label();
             this.LblGoodMorning = new System.Windows.Forms.Label();
             this.BtnClose = new System.Windows.Forms.Button();
             this.PanelHeader2 = new System.Windows.Forms.Panel();
+            this.PbWeather = new System.Windows.Forms.PictureBox();
             this.LblGrades = new System.Windows.Forms.Label();
             this.LblPlace = new System.Windows.Forms.Label();
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
-            this.LblAMPM = new System.Windows.Forms.Label();
             this.GroupLogin = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.CbUsers = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.BtnCancel = new System.Windows.Forms.Button();
+            this.PanelPassword = new System.Windows.Forms.Panel();
+            this.PbPassword = new System.Windows.Forms.PictureBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.PanelUser = new System.Windows.Forms.Panel();
+            this.PbUser = new System.Windows.Forms.PictureBox();
+            this.CbUsers = new System.Windows.Forms.ComboBox();
             this.BtnLogin = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.PanelActivity = new System.Windows.Forms.Panel();
             this.LblActivity = new System.Windows.Forms.Label();
             this.LblSeparator = new System.Windows.Forms.Label();
-            this.PanelUser = new System.Windows.Forms.Panel();
-            this.PanelPassword = new System.Windows.Forms.Panel();
-            this.BtnCancel = new System.Windows.Forms.Button();
             this.PanelFooter = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PbPassword = new System.Windows.Forms.PictureBox();
-            this.PbUser = new System.Windows.Forms.PictureBox();
-            this.PbWeather = new System.Windows.Forms.PictureBox();
-            this.PbCalendar = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.PanelHeader1.SuspendLayout();
             this.PanelDate.SuspendLayout();
-            this.PanelHeader2.SuspendLayout();
-            this.GroupLogin.SuspendLayout();
-            this.PanelActivity.SuspendLayout();
-            this.PanelUser.SuspendLayout();
-            this.PanelPassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbPassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbWeather)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbCalendar)).BeginInit();
+            this.PanelHeader2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbWeather)).BeginInit();
+            this.GroupLogin.SuspendLayout();
+            this.PanelPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbPassword)).BeginInit();
+            this.PanelUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbUser)).BeginInit();
+            this.PanelActivity.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelHeader1
@@ -85,6 +85,18 @@
             this.PanelHeader1.Name = "PanelHeader1";
             this.PanelHeader1.Size = new System.Drawing.Size(450, 120);
             this.PanelHeader1.TabIndex = 0;
+            // 
+            // LblAMPM
+            // 
+            this.LblAMPM.AutoSize = true;
+            this.LblAMPM.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAMPM.ForeColor = System.Drawing.Color.White;
+            this.LblAMPM.Location = new System.Drawing.Point(410, 77);
+            this.LblAMPM.Name = "LblAMPM";
+            this.LblAMPM.Size = new System.Drawing.Size(30, 19);
+            this.LblAMPM.TabIndex = 5;
+            this.LblAMPM.Text = "PM";
+            this.LblAMPM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LblHours
             // 
@@ -107,6 +119,17 @@
             this.PanelDate.Name = "PanelDate";
             this.PanelDate.Size = new System.Drawing.Size(196, 50);
             this.PanelDate.TabIndex = 3;
+            // 
+            // PbCalendar
+            // 
+            this.PbCalendar.BackColor = System.Drawing.Color.Transparent;
+            this.PbCalendar.Image = global::Reef___PDV.Properties.Resources.Calendar;
+            this.PbCalendar.Location = new System.Drawing.Point(5, 7);
+            this.PbCalendar.Name = "PbCalendar";
+            this.PbCalendar.Size = new System.Drawing.Size(30, 35);
+            this.PbCalendar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PbCalendar.TabIndex = 3;
+            this.PbCalendar.TabStop = false;
             // 
             // LblDate
             // 
@@ -154,6 +177,16 @@
             this.PanelHeader2.Size = new System.Drawing.Size(250, 120);
             this.PanelHeader2.TabIndex = 2;
             // 
+            // PbWeather
+            // 
+            this.PbWeather.Image = global::Reef___PDV.Properties.Resources.sun;
+            this.PbWeather.Location = new System.Drawing.Point(19, 10);
+            this.PbWeather.Name = "PbWeather";
+            this.PbWeather.Size = new System.Drawing.Size(65, 65);
+            this.PbWeather.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PbWeather.TabIndex = 4;
+            this.PbWeather.TabStop = false;
+            // 
             // LblGrades
             // 
             this.LblGrades.AutoSize = true;
@@ -181,18 +214,6 @@
             this.tmrTime.Enabled = true;
             this.tmrTime.Tick += new System.EventHandler(this.tmrTime_Tick);
             // 
-            // LblAMPM
-            // 
-            this.LblAMPM.AutoSize = true;
-            this.LblAMPM.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAMPM.ForeColor = System.Drawing.Color.White;
-            this.LblAMPM.Location = new System.Drawing.Point(410, 77);
-            this.LblAMPM.Name = "LblAMPM";
-            this.LblAMPM.Size = new System.Drawing.Size(30, 19);
-            this.LblAMPM.TabIndex = 5;
-            this.LblAMPM.Text = "PM";
-            this.LblAMPM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // GroupLogin
             // 
             this.GroupLogin.Controls.Add(this.BtnCancel);
@@ -210,39 +231,40 @@
             this.GroupLogin.TabStop = false;
             this.GroupLogin.Text = "Iniciar Sesión";
             // 
-            // label1
+            // BtnCancel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(46, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 23);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Usuario:";
+            this.BtnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(180)))), ((int)(((byte)(146)))));
+            this.BtnCancel.FlatAppearance.BorderSize = 0;
+            this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancel.ForeColor = System.Drawing.Color.White;
+            this.BtnCancel.Location = new System.Drawing.Point(178, 180);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(90, 30);
+            this.BtnCancel.TabIndex = 13;
+            this.BtnCancel.Text = "Cancelar";
+            this.BtnCancel.UseVisualStyleBackColor = false;
             // 
-            // CbUsers
+            // PanelPassword
             // 
-            this.CbUsers.BackColor = System.Drawing.Color.Gainsboro;
-            this.CbUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CbUsers.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CbUsers.ForeColor = System.Drawing.Color.Gray;
-            this.CbUsers.FormattingEnabled = true;
-            this.CbUsers.Location = new System.Drawing.Point(38, 2);
-            this.CbUsers.Name = "CbUsers";
-            this.CbUsers.Size = new System.Drawing.Size(180, 29);
-            this.CbUsers.TabIndex = 6;
+            this.PanelPassword.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.PanelPassword.Controls.Add(this.PbPassword);
+            this.PanelPassword.Controls.Add(this.TxtPassword);
+            this.PanelPassword.Location = new System.Drawing.Point(50, 135);
+            this.PanelPassword.Name = "PanelPassword";
+            this.PanelPassword.Size = new System.Drawing.Size(224, 33);
+            this.PanelPassword.TabIndex = 12;
             // 
-            // label2
+            // PbPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(46, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 23);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Contraseña:";
+            this.PbPassword.BackColor = System.Drawing.Color.Transparent;
+            this.PbPassword.Image = global::Reef___PDV.Properties.Resources.locked;
+            this.PbPassword.Location = new System.Drawing.Point(2, 2);
+            this.PbPassword.Name = "PbPassword";
+            this.PbPassword.Size = new System.Drawing.Size(30, 29);
+            this.PbPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PbPassword.TabIndex = 10;
+            this.PbPassword.TabStop = false;
             // 
             // TxtPassword
             // 
@@ -258,6 +280,40 @@
             this.TxtPassword.TabIndex = 8;
             this.TxtPassword.Text = "Sergio";
             // 
+            // PanelUser
+            // 
+            this.PanelUser.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.PanelUser.Controls.Add(this.PbUser);
+            this.PanelUser.Controls.Add(this.CbUsers);
+            this.PanelUser.ForeColor = System.Drawing.Color.DarkRed;
+            this.PanelUser.Location = new System.Drawing.Point(50, 65);
+            this.PanelUser.Name = "PanelUser";
+            this.PanelUser.Size = new System.Drawing.Size(224, 35);
+            this.PanelUser.TabIndex = 11;
+            // 
+            // PbUser
+            // 
+            this.PbUser.BackColor = System.Drawing.Color.Transparent;
+            this.PbUser.Image = global::Reef___PDV.Properties.Resources.user;
+            this.PbUser.Location = new System.Drawing.Point(2, 2);
+            this.PbUser.Name = "PbUser";
+            this.PbUser.Size = new System.Drawing.Size(30, 29);
+            this.PbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PbUser.TabIndex = 4;
+            this.PbUser.TabStop = false;
+            // 
+            // CbUsers
+            // 
+            this.CbUsers.BackColor = System.Drawing.Color.Gainsboro;
+            this.CbUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CbUsers.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbUsers.ForeColor = System.Drawing.Color.Gray;
+            this.CbUsers.FormattingEnabled = true;
+            this.CbUsers.Location = new System.Drawing.Point(38, 2);
+            this.CbUsers.Name = "CbUsers";
+            this.CbUsers.Size = new System.Drawing.Size(180, 29);
+            this.CbUsers.TabIndex = 6;
+            // 
             // BtnLogin
             // 
             this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(180)))), ((int)(((byte)(146)))));
@@ -272,6 +328,28 @@
             this.BtnLogin.Text = "Acceder";
             this.BtnLogin.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(46, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 23);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Contraseña:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(46, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 23);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Usuario:";
+            // 
             // PanelActivity
             // 
             this.PanelActivity.BackColor = System.Drawing.SystemColors.InactiveBorder;
@@ -279,7 +357,7 @@
             this.PanelActivity.Controls.Add(this.LblSeparator);
             this.PanelActivity.Location = new System.Drawing.Point(450, 150);
             this.PanelActivity.Name = "PanelActivity";
-            this.PanelActivity.Size = new System.Drawing.Size(250, 240);
+            this.PanelActivity.Size = new System.Drawing.Size(250, 253);
             this.PanelActivity.TabIndex = 7;
             // 
             // LblActivity
@@ -304,41 +382,6 @@
             this.LblSeparator.Text = "________________________";
             this.LblSeparator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PanelUser
-            // 
-            this.PanelUser.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.PanelUser.Controls.Add(this.PbUser);
-            this.PanelUser.Controls.Add(this.CbUsers);
-            this.PanelUser.ForeColor = System.Drawing.Color.DarkRed;
-            this.PanelUser.Location = new System.Drawing.Point(50, 65);
-            this.PanelUser.Name = "PanelUser";
-            this.PanelUser.Size = new System.Drawing.Size(224, 35);
-            this.PanelUser.TabIndex = 11;
-            // 
-            // PanelPassword
-            // 
-            this.PanelPassword.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.PanelPassword.Controls.Add(this.PbPassword);
-            this.PanelPassword.Controls.Add(this.TxtPassword);
-            this.PanelPassword.Location = new System.Drawing.Point(50, 135);
-            this.PanelPassword.Name = "PanelPassword";
-            this.PanelPassword.Size = new System.Drawing.Size(224, 33);
-            this.PanelPassword.TabIndex = 12;
-            // 
-            // BtnCancel
-            // 
-            this.BtnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(180)))), ((int)(((byte)(146)))));
-            this.BtnCancel.FlatAppearance.BorderSize = 0;
-            this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancel.ForeColor = System.Drawing.Color.White;
-            this.BtnCancel.Location = new System.Drawing.Point(178, 180);
-            this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(90, 30);
-            this.BtnCancel.TabIndex = 13;
-            this.BtnCancel.Text = "Cancelar";
-            this.BtnCancel.UseVisualStyleBackColor = false;
-            // 
             // PanelFooter
             // 
             this.PanelFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(180)))), ((int)(((byte)(146)))));
@@ -357,49 +400,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // PbPassword
-            // 
-            this.PbPassword.BackColor = System.Drawing.Color.Transparent;
-            this.PbPassword.Image = global::Reef___PDV.Properties.Resources.locked;
-            this.PbPassword.Location = new System.Drawing.Point(2, 2);
-            this.PbPassword.Name = "PbPassword";
-            this.PbPassword.Size = new System.Drawing.Size(30, 29);
-            this.PbPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PbPassword.TabIndex = 10;
-            this.PbPassword.TabStop = false;
-            // 
-            // PbUser
-            // 
-            this.PbUser.BackColor = System.Drawing.Color.Transparent;
-            this.PbUser.Image = global::Reef___PDV.Properties.Resources.user;
-            this.PbUser.Location = new System.Drawing.Point(2, 2);
-            this.PbUser.Name = "PbUser";
-            this.PbUser.Size = new System.Drawing.Size(30, 29);
-            this.PbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PbUser.TabIndex = 4;
-            this.PbUser.TabStop = false;
-            // 
-            // PbWeather
-            // 
-            this.PbWeather.Image = global::Reef___PDV.Properties.Resources.sun;
-            this.PbWeather.Location = new System.Drawing.Point(19, 10);
-            this.PbWeather.Name = "PbWeather";
-            this.PbWeather.Size = new System.Drawing.Size(65, 65);
-            this.PbWeather.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PbWeather.TabIndex = 4;
-            this.PbWeather.TabStop = false;
-            // 
-            // PbCalendar
-            // 
-            this.PbCalendar.BackColor = System.Drawing.Color.Transparent;
-            this.PbCalendar.Image = global::Reef___PDV.Properties.Resources.Calendar;
-            this.PbCalendar.Location = new System.Drawing.Point(5, 7);
-            this.PbCalendar.Name = "PbCalendar";
-            this.PbCalendar.Size = new System.Drawing.Size(30, 35);
-            this.PbCalendar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PbCalendar.TabIndex = 3;
-            this.PbCalendar.TabStop = false;
             // 
             // label3
             // 
@@ -436,20 +436,20 @@
             this.PanelHeader1.PerformLayout();
             this.PanelDate.ResumeLayout(false);
             this.PanelDate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbCalendar)).EndInit();
             this.PanelHeader2.ResumeLayout(false);
             this.PanelHeader2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbWeather)).EndInit();
             this.GroupLogin.ResumeLayout(false);
             this.GroupLogin.PerformLayout();
-            this.PanelActivity.ResumeLayout(false);
-            this.PanelActivity.PerformLayout();
-            this.PanelUser.ResumeLayout(false);
             this.PanelPassword.ResumeLayout(false);
             this.PanelPassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbPassword)).EndInit();
+            this.PanelUser.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PbUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbWeather)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbCalendar)).EndInit();
+            this.PanelActivity.ResumeLayout(false);
+            this.PanelActivity.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

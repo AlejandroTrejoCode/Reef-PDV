@@ -62,11 +62,6 @@ namespace Reef___PDV
             string AMPM = DateTime.Now.ToString("tt").ToUpper();
             LblHours.Text = time;
             LblAMPM.Text = AMPM;
-        }
-
-        private void PanelUser_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
+        }        
     }    
 }

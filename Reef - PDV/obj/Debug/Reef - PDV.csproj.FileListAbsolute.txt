@@ -17,3 +17,4 @@ C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - 
 C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef___PDV.Login.resources
 C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef___PDV.Properties.Resources.resources
 C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef - PDV.csproj.GenerateResource.Cache
+C:\Users\Aleja\Documents\Visual Studio 2015\Projects\Projects\Reef - PDV\Reef - PDV\obj\Debug\Reef___PDV.Vistas.Dashboard.resources
