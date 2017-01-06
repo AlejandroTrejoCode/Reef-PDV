@@ -20,6 +20,6 @@ namespace Reef___PDV.Vistas
         private void ProfileTag_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
-        }        
+        }
     }
 }
