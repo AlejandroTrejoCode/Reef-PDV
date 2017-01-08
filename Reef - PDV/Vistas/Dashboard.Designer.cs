@@ -28,6 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea57 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend57 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series57 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea58 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend58 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series58 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.PanelRelleno = new System.Windows.Forms.Panel();
             this.LblRelleno = new System.Windows.Forms.Label();
@@ -67,11 +74,22 @@
             this.ProfileImage = new System.Windows.Forms.PictureBox();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.PanelBienvenida = new System.Windows.Forms.Panel();
-            this.PanelDashboard = new System.Windows.Forms.Panel();
+            this.BtnCerrarRecordatorio = new System.Windows.Forms.Button();
+            this.LblRecordatorio = new System.Windows.Forms.Label();
             this.LblBienvenida = new System.Windows.Forms.Label();
             this.LblBienvenidaNombre = new System.Windows.Forms.Label();
-            this.LblRecordatorio = new System.Windows.Forms.Label();
-            this.BtnCerrarRecordatorio = new System.Windows.Forms.Button();
+            this.PanelDashboard = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.PanelDate = new System.Windows.Forms.Panel();
+            this.LblDate = new System.Windows.Forms.Label();
+            this.LblHour = new System.Windows.Forms.Label();
+            this.TimerTime = new System.Windows.Forms.Timer(this.components);
             this.PanelMenu.SuspendLayout();
             this.PanelRelleno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbRelleno)).BeginInit();
@@ -97,11 +115,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProfileImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.PanelBienvenida.SuspendLayout();
+            this.PanelDashboard.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.PanelDate.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(41)))));
+            this.PanelMenu.Controls.Add(this.MenuSelector);
             this.PanelMenu.Controls.Add(this.PanelRelleno);
             this.PanelMenu.Controls.Add(this.PanelAjustes);
             this.PanelMenu.Controls.Add(this.PanelOfertas);
@@ -111,7 +136,6 @@
             this.PanelMenu.Controls.Add(this.PanelReportes);
             this.PanelMenu.Controls.Add(this.PanelProductos);
             this.PanelMenu.Controls.Add(this.PanelVender);
-            this.PanelMenu.Controls.Add(this.MenuSelector);
             this.PanelMenu.Location = new System.Drawing.Point(0, 68);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(170, 700);
@@ -126,6 +150,8 @@
             this.PanelRelleno.Name = "PanelRelleno";
             this.PanelRelleno.Size = new System.Drawing.Size(160, 70);
             this.PanelRelleno.TabIndex = 9;
+            this.PanelRelleno.MouseEnter += new System.EventHandler(this.PanelRelleno_MouseEnter);
+            this.PanelRelleno.MouseLeave += new System.EventHandler(this.PanelRelleno_MouseLeave);
             // 
             // LblRelleno
             // 
@@ -137,6 +163,7 @@
             this.LblRelleno.TabIndex = 1;
             this.LblRelleno.Text = "Relleno";
             this.LblRelleno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblRelleno.MouseEnter += new System.EventHandler(this.PanelRelleno_MouseEnter);
             // 
             // PbRelleno
             // 
@@ -147,6 +174,7 @@
             this.PbRelleno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbRelleno.TabIndex = 0;
             this.PbRelleno.TabStop = false;
+            this.PbRelleno.MouseEnter += new System.EventHandler(this.PanelRelleno_MouseEnter);
             // 
             // PanelAjustes
             // 
@@ -157,6 +185,8 @@
             this.PanelAjustes.Name = "PanelAjustes";
             this.PanelAjustes.Size = new System.Drawing.Size(160, 70);
             this.PanelAjustes.TabIndex = 8;
+            this.PanelAjustes.MouseEnter += new System.EventHandler(this.PanelAjustes_MouseEnter);
+            this.PanelAjustes.MouseLeave += new System.EventHandler(this.PanelAjustes_MouseLeave);
             // 
             // LblAjustes
             // 
@@ -168,6 +198,7 @@
             this.LblAjustes.TabIndex = 1;
             this.LblAjustes.Text = "Ajustes";
             this.LblAjustes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblAjustes.MouseEnter += new System.EventHandler(this.PanelAjustes_MouseEnter);
             // 
             // PbAjustes
             // 
@@ -178,6 +209,7 @@
             this.PbAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbAjustes.TabIndex = 0;
             this.PbAjustes.TabStop = false;
+            this.PbAjustes.MouseEnter += new System.EventHandler(this.PanelAjustes_MouseEnter);
             // 
             // PanelOfertas
             // 
@@ -188,6 +220,8 @@
             this.PanelOfertas.Name = "PanelOfertas";
             this.PanelOfertas.Size = new System.Drawing.Size(160, 70);
             this.PanelOfertas.TabIndex = 7;
+            this.PanelOfertas.MouseEnter += new System.EventHandler(this.PanelOfertas_MouseEnter);
+            this.PanelOfertas.MouseLeave += new System.EventHandler(this.PanelOfertas_MouseLeave);
             // 
             // LblOfertas
             // 
@@ -199,6 +233,7 @@
             this.LblOfertas.TabIndex = 1;
             this.LblOfertas.Text = "Ofertas";
             this.LblOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblOfertas.MouseEnter += new System.EventHandler(this.PanelOfertas_MouseEnter);
             // 
             // PbOfertas
             // 
@@ -209,6 +244,7 @@
             this.PbOfertas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbOfertas.TabIndex = 0;
             this.PbOfertas.TabStop = false;
+            this.PbOfertas.MouseEnter += new System.EventHandler(this.PanelOfertas_MouseEnter);
             // 
             // PanelAnalisis
             // 
@@ -219,6 +255,8 @@
             this.PanelAnalisis.Name = "PanelAnalisis";
             this.PanelAnalisis.Size = new System.Drawing.Size(160, 70);
             this.PanelAnalisis.TabIndex = 6;
+            this.PanelAnalisis.MouseEnter += new System.EventHandler(this.PanelAnalisis_MouseEnter);
+            this.PanelAnalisis.MouseLeave += new System.EventHandler(this.PanelAnalisis_MouseLeave);
             // 
             // LblAnalisis
             // 
@@ -230,6 +268,7 @@
             this.LblAnalisis.TabIndex = 1;
             this.LblAnalisis.Text = "Análisis";
             this.LblAnalisis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblAnalisis.MouseEnter += new System.EventHandler(this.PanelAnalisis_MouseEnter);
             // 
             // PbAnalisis
             // 
@@ -240,6 +279,7 @@
             this.PbAnalisis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbAnalisis.TabIndex = 0;
             this.PbAnalisis.TabStop = false;
+            this.PbAnalisis.MouseEnter += new System.EventHandler(this.PanelAnalisis_MouseEnter);
             // 
             // PanelCorte
             // 
@@ -250,6 +290,8 @@
             this.PanelCorte.Name = "PanelCorte";
             this.PanelCorte.Size = new System.Drawing.Size(160, 70);
             this.PanelCorte.TabIndex = 5;
+            this.PanelCorte.MouseEnter += new System.EventHandler(this.PanelCorte_MouseEnter);
+            this.PanelCorte.MouseLeave += new System.EventHandler(this.PanelCorte_MouseLeave);
             // 
             // LblCorte
             // 
@@ -261,6 +303,7 @@
             this.LblCorte.TabIndex = 1;
             this.LblCorte.Text = "Corte";
             this.LblCorte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblCorte.MouseEnter += new System.EventHandler(this.PanelCorte_MouseEnter);
             // 
             // PbCorte
             // 
@@ -271,6 +314,7 @@
             this.PbCorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbCorte.TabIndex = 0;
             this.PbCorte.TabStop = false;
+            this.PbCorte.MouseEnter += new System.EventHandler(this.PanelCorte_MouseEnter);
             // 
             // PanelInventario
             // 
@@ -281,6 +325,8 @@
             this.PanelInventario.Name = "PanelInventario";
             this.PanelInventario.Size = new System.Drawing.Size(160, 70);
             this.PanelInventario.TabIndex = 4;
+            this.PanelInventario.MouseEnter += new System.EventHandler(this.PanelInventario_MouseEnter);
+            this.PanelInventario.MouseLeave += new System.EventHandler(this.PanelInventario_MouseLeave);
             // 
             // LblInventario
             // 
@@ -292,6 +338,7 @@
             this.LblInventario.TabIndex = 1;
             this.LblInventario.Text = "Inventario";
             this.LblInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblInventario.MouseEnter += new System.EventHandler(this.PanelInventario_MouseEnter);
             // 
             // PbInventario
             // 
@@ -302,6 +349,7 @@
             this.PbInventario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbInventario.TabIndex = 0;
             this.PbInventario.TabStop = false;
+            this.PbInventario.MouseEnter += new System.EventHandler(this.PanelInventario_MouseEnter);
             // 
             // PanelReportes
             // 
@@ -312,6 +360,8 @@
             this.PanelReportes.Name = "PanelReportes";
             this.PanelReportes.Size = new System.Drawing.Size(160, 70);
             this.PanelReportes.TabIndex = 3;
+            this.PanelReportes.MouseEnter += new System.EventHandler(this.PanelReportes_MouseEnter);
+            this.PanelReportes.MouseLeave += new System.EventHandler(this.PanelReportes_MouseLeave);
             // 
             // LblReportes
             // 
@@ -323,6 +373,7 @@
             this.LblReportes.TabIndex = 1;
             this.LblReportes.Text = "Reportes";
             this.LblReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblReportes.MouseEnter += new System.EventHandler(this.PanelReportes_MouseEnter);
             // 
             // PbReportes
             // 
@@ -333,6 +384,7 @@
             this.PbReportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbReportes.TabIndex = 0;
             this.PbReportes.TabStop = false;
+            this.PbReportes.MouseEnter += new System.EventHandler(this.PanelReportes_MouseEnter);
             // 
             // PanelProductos
             // 
@@ -343,6 +395,8 @@
             this.PanelProductos.Name = "PanelProductos";
             this.PanelProductos.Size = new System.Drawing.Size(160, 70);
             this.PanelProductos.TabIndex = 2;
+            this.PanelProductos.MouseEnter += new System.EventHandler(this.PanelProductos_MouseEnter);
+            this.PanelProductos.MouseLeave += new System.EventHandler(this.PanelProductos_MouseLeave);
             // 
             // LblProductos
             // 
@@ -354,6 +408,7 @@
             this.LblProductos.TabIndex = 1;
             this.LblProductos.Text = "Productos";
             this.LblProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblProductos.MouseEnter += new System.EventHandler(this.PanelProductos_MouseEnter);
             // 
             // PbProductos
             // 
@@ -364,6 +419,7 @@
             this.PbProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbProductos.TabIndex = 0;
             this.PbProductos.TabStop = false;
+            this.PbProductos.MouseEnter += new System.EventHandler(this.PanelProductos_MouseEnter);
             // 
             // PanelVender
             // 
@@ -373,6 +429,8 @@
             this.PanelVender.Name = "PanelVender";
             this.PanelVender.Size = new System.Drawing.Size(160, 70);
             this.PanelVender.TabIndex = 1;
+            this.PanelVender.MouseEnter += new System.EventHandler(this.PanelVender_MouseEnter);
+            this.PanelVender.MouseLeave += new System.EventHandler(this.PanelVender_MouseLeave);
             // 
             // LblVender
             // 
@@ -384,6 +442,7 @@
             this.LblVender.TabIndex = 1;
             this.LblVender.Text = "Vender";
             this.LblVender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblVender.MouseHover += new System.EventHandler(this.PanelVender_MouseEnter);
             // 
             // PbVender
             // 
@@ -394,6 +453,7 @@
             this.PbVender.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbVender.TabIndex = 0;
             this.PbVender.TabStop = false;
+            this.PbVender.MouseHover += new System.EventHandler(this.PanelVender_MouseEnter);
             // 
             // MenuSelector
             // 
@@ -511,14 +571,31 @@
             this.PanelBienvenida.Size = new System.Drawing.Size(1181, 90);
             this.PanelBienvenida.TabIndex = 1;
             // 
-            // PanelDashboard
+            // BtnCerrarRecordatorio
             // 
-            this.PanelDashboard.BackColor = System.Drawing.Color.White;
-            this.PanelDashboard.Location = new System.Drawing.Point(178, 176);
-            this.PanelDashboard.Margin = new System.Windows.Forms.Padding(5);
-            this.PanelDashboard.Name = "PanelDashboard";
-            this.PanelDashboard.Size = new System.Drawing.Size(1181, 578);
-            this.PanelDashboard.TabIndex = 2;
+            this.BtnCerrarRecordatorio.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.BtnCerrarRecordatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarRecordatorio.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCerrarRecordatorio.Location = new System.Drawing.Point(1143, 4);
+            this.BtnCerrarRecordatorio.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnCerrarRecordatorio.Name = "BtnCerrarRecordatorio";
+            this.BtnCerrarRecordatorio.Size = new System.Drawing.Size(30, 25);
+            this.BtnCerrarRecordatorio.TabIndex = 3;
+            this.BtnCerrarRecordatorio.Text = "X";
+            this.BtnCerrarRecordatorio.UseVisualStyleBackColor = true;
+            this.BtnCerrarRecordatorio.Click += new System.EventHandler(this.BtnCerrarRecordatorio_Click);
+            // 
+            // LblRecordatorio
+            // 
+            this.LblRecordatorio.AutoSize = true;
+            this.LblRecordatorio.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRecordatorio.ForeColor = System.Drawing.Color.DimGray;
+            this.LblRecordatorio.Location = new System.Drawing.Point(22, 55);
+            this.LblRecordatorio.Name = "LblRecordatorio";
+            this.LblRecordatorio.Size = new System.Drawing.Size(545, 19);
+            this.LblRecordatorio.TabIndex = 2;
+            this.LblRecordatorio.Text = "Recuerda revisar que todo se encuentra en orden antes de iniciar o terminar turno" +
+    ".";
             // 
             // LblBienvenida
             // 
@@ -544,30 +621,142 @@
             this.LblBienvenidaNombre.TabIndex = 1;
             this.LblBienvenidaNombre.Text = "Christopher!";
             // 
-            // LblRecordatorio
+            // PanelDashboard
             // 
-            this.LblRecordatorio.AutoSize = true;
-            this.LblRecordatorio.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRecordatorio.ForeColor = System.Drawing.Color.DimGray;
-            this.LblRecordatorio.Location = new System.Drawing.Point(22, 55);
-            this.LblRecordatorio.Name = "LblRecordatorio";
-            this.LblRecordatorio.Size = new System.Drawing.Size(545, 19);
-            this.LblRecordatorio.TabIndex = 2;
-            this.LblRecordatorio.Text = "Recuerda revisar que todo se encuentra en orden antes de iniciar o terminar turno" +
-    ".";
+            this.PanelDashboard.BackColor = System.Drawing.Color.White;
+            this.PanelDashboard.Controls.Add(this.panel6);
+            this.PanelDashboard.Controls.Add(this.panel5);
+            this.PanelDashboard.Controls.Add(this.panel4);
+            this.PanelDashboard.Controls.Add(this.panel3);
+            this.PanelDashboard.Controls.Add(this.panel2);
+            this.PanelDashboard.Controls.Add(this.PanelDate);
+            this.PanelDashboard.Location = new System.Drawing.Point(178, 176);
+            this.PanelDashboard.Margin = new System.Windows.Forms.Padding(5);
+            this.PanelDashboard.Name = "PanelDashboard";
+            this.PanelDashboard.Size = new System.Drawing.Size(1181, 578);
+            this.PanelDashboard.TabIndex = 2;
             // 
-            // BtnCerrarRecordatorio
+            // panel6
             // 
-            this.BtnCerrarRecordatorio.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.BtnCerrarRecordatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarRecordatorio.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnCerrarRecordatorio.Location = new System.Drawing.Point(1143, 4);
-            this.BtnCerrarRecordatorio.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnCerrarRecordatorio.Name = "BtnCerrarRecordatorio";
-            this.BtnCerrarRecordatorio.Size = new System.Drawing.Size(30, 25);
-            this.BtnCerrarRecordatorio.TabIndex = 3;
-            this.BtnCerrarRecordatorio.Text = "X";
-            this.BtnCerrarRecordatorio.UseVisualStyleBackColor = true;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(226)))), ((int)(((byte)(176)))));
+            this.panel6.Location = new System.Drawing.Point(940, 10);
+            this.panel6.Margin = new System.Windows.Forms.Padding(10);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(229, 558);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(228)))), ((int)(((byte)(223)))));
+            this.panel5.Location = new System.Drawing.Point(630, 10);
+            this.panel5.Margin = new System.Windows.Forms.Padding(10);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(290, 250);
+            this.panel5.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(131)))), ((int)(((byte)(149)))));
+            this.panel4.Location = new System.Drawing.Point(320, 10);
+            this.panel4.Margin = new System.Windows.Forms.Padding(10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(290, 250);
+            this.panel4.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(200)))), ((int)(((byte)(163)))));
+            this.panel3.Controls.Add(this.chart2);
+            this.panel3.Location = new System.Drawing.Point(630, 318);
+            this.panel3.Margin = new System.Windows.Forms.Padding(10);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(290, 250);
+            this.panel3.TabIndex = 2;
+            // 
+            // chart2
+            // 
+            chartArea57.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea57);
+            legend57.Name = "Legend1";
+            this.chart2.Legends.Add(legend57);
+            this.chart2.Location = new System.Drawing.Point(5, 5);
+            this.chart2.Margin = new System.Windows.Forms.Padding(5);
+            this.chart2.Name = "chart2";
+            series57.ChartArea = "ChartArea1";
+            series57.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series57.Legend = "Legend1";
+            series57.Name = "Series1";
+            this.chart2.Series.Add(series57);
+            this.chart2.Size = new System.Drawing.Size(280, 240);
+            this.chart2.TabIndex = 0;
+            this.chart2.Text = "chart2";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(200)))), ((int)(((byte)(163)))));
+            this.panel2.Controls.Add(this.chart1);
+            this.panel2.Location = new System.Drawing.Point(10, 318);
+            this.panel2.Margin = new System.Windows.Forms.Padding(10);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(600, 250);
+            this.panel2.TabIndex = 1;
+            // 
+            // chart1
+            // 
+            chartArea58.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea58);
+            legend58.Name = "Legend1";
+            this.chart1.Legends.Add(legend58);
+            this.chart1.Location = new System.Drawing.Point(5, 5);
+            this.chart1.Margin = new System.Windows.Forms.Padding(5);
+            this.chart1.Name = "chart1";
+            series58.ChartArea = "ChartArea1";
+            series58.Legend = "Legend1";
+            series58.Name = "Series1";
+            this.chart1.Series.Add(series58);
+            this.chart1.Size = new System.Drawing.Size(590, 240);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // PanelDate
+            // 
+            this.PanelDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(200)))), ((int)(((byte)(163)))));
+            this.PanelDate.Controls.Add(this.LblDate);
+            this.PanelDate.Controls.Add(this.LblHour);
+            this.PanelDate.Location = new System.Drawing.Point(10, 10);
+            this.PanelDate.Margin = new System.Windows.Forms.Padding(10);
+            this.PanelDate.Name = "PanelDate";
+            this.PanelDate.Size = new System.Drawing.Size(290, 250);
+            this.PanelDate.TabIndex = 0;
+            // 
+            // LblDate
+            // 
+            this.LblDate.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDate.ForeColor = System.Drawing.Color.White;
+            this.LblDate.Location = new System.Drawing.Point(5, 159);
+            this.LblDate.Margin = new System.Windows.Forms.Padding(5);
+            this.LblDate.Name = "LblDate";
+            this.LblDate.Size = new System.Drawing.Size(280, 56);
+            this.LblDate.TabIndex = 7;
+            this.LblDate.Text = "LUN 22, JUL 16";
+            this.LblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblHour
+            // 
+            this.LblHour.Font = new System.Drawing.Font("Calibri", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHour.ForeColor = System.Drawing.Color.White;
+            this.LblHour.Location = new System.Drawing.Point(5, 36);
+            this.LblHour.Margin = new System.Windows.Forms.Padding(5);
+            this.LblHour.Name = "LblHour";
+            this.LblHour.Size = new System.Drawing.Size(280, 113);
+            this.LblHour.TabIndex = 0;
+            this.LblHour.Text = "12:37";
+            this.LblHour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TimerTime
+            // 
+            this.TimerTime.Enabled = true;
+            this.TimerTime.Tick += new System.EventHandler(this.TimerTime_Tick);
             // 
             // Dashboard
             // 
@@ -611,6 +800,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.PanelBienvenida.ResumeLayout(false);
             this.PanelBienvenida.PerformLayout();
+            this.PanelDashboard.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.PanelDate.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -661,5 +856,16 @@
         private System.Windows.Forms.Label LblBienvenidaNombre;
         private System.Windows.Forms.Label LblRecordatorio;
         private System.Windows.Forms.Button BtnCerrarRecordatorio;
+        private System.Windows.Forms.Panel PanelDate;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label LblHour;
+        private System.Windows.Forms.Label LblDate;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Timer TimerTime;
     }
 }
