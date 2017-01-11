@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea57 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend57 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series57 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea58 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend58 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series58 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.MenuSelector = new System.Windows.Forms.Panel();
             this.PanelRelleno = new System.Windows.Forms.Panel();
             this.LblRelleno = new System.Windows.Forms.Label();
             this.PbRelleno = new System.Windows.Forms.PictureBox();
@@ -63,7 +64,6 @@
             this.PanelVender = new System.Windows.Forms.Panel();
             this.LblVender = new System.Windows.Forms.Label();
             this.PbVender = new System.Windows.Forms.PictureBox();
-            this.MenuSelector = new System.Windows.Forms.Panel();
             this.PanelStatusBar = new System.Windows.Forms.Panel();
             this.PanelInfo = new System.Windows.Forms.Panel();
             this.EstablishmentAddress = new System.Windows.Forms.Label();
@@ -90,6 +90,8 @@
             this.LblDate = new System.Windows.Forms.Label();
             this.LblHour = new System.Windows.Forms.Label();
             this.TimerTime = new System.Windows.Forms.Timer(this.components);
+            this.ProfileMenu = new System.Windows.Forms.Panel();
+            this.TimerProfile = new System.Windows.Forms.Timer(this.components);
             this.PanelMenu.SuspendLayout();
             this.PanelRelleno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbRelleno)).BeginInit();
@@ -140,6 +142,14 @@
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(170, 700);
             this.PanelMenu.TabIndex = 0;
+            // 
+            // MenuSelector
+            // 
+            this.MenuSelector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(200)))), ((int)(((byte)(163)))));
+            this.MenuSelector.Location = new System.Drawing.Point(0, 20);
+            this.MenuSelector.Name = "MenuSelector";
+            this.MenuSelector.Size = new System.Drawing.Size(8, 70);
+            this.MenuSelector.TabIndex = 0;
             // 
             // PanelRelleno
             // 
@@ -455,14 +465,6 @@
             this.PbVender.TabStop = false;
             this.PbVender.MouseHover += new System.EventHandler(this.PanelVender_MouseEnter);
             // 
-            // MenuSelector
-            // 
-            this.MenuSelector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(200)))), ((int)(((byte)(163)))));
-            this.MenuSelector.Location = new System.Drawing.Point(0, 20);
-            this.MenuSelector.Name = "MenuSelector";
-            this.MenuSelector.Size = new System.Drawing.Size(8, 70);
-            this.MenuSelector.TabIndex = 0;
-            // 
             // PanelStatusBar
             // 
             this.PanelStatusBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(180)))), ((int)(((byte)(146)))));
@@ -547,6 +549,7 @@
             this.ProfileImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ProfileImage.TabIndex = 0;
             this.ProfileImage.TabStop = false;
+            this.ProfileImage.Click += new System.EventHandler(this.ProfileImage_Click);
             // 
             // Logo
             // 
@@ -675,18 +678,18 @@
             // 
             // chart2
             // 
-            chartArea57.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea57);
-            legend57.Name = "Legend1";
-            this.chart2.Legends.Add(legend57);
+            chartArea13.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea13);
+            legend13.Name = "Legend1";
+            this.chart2.Legends.Add(legend13);
             this.chart2.Location = new System.Drawing.Point(5, 5);
             this.chart2.Margin = new System.Windows.Forms.Padding(5);
             this.chart2.Name = "chart2";
-            series57.ChartArea = "ChartArea1";
-            series57.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series57.Legend = "Legend1";
-            series57.Name = "Series1";
-            this.chart2.Series.Add(series57);
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series13.Legend = "Legend1";
+            series13.Name = "Series1";
+            this.chart2.Series.Add(series13);
             this.chart2.Size = new System.Drawing.Size(280, 240);
             this.chart2.TabIndex = 0;
             this.chart2.Text = "chart2";
@@ -703,17 +706,17 @@
             // 
             // chart1
             // 
-            chartArea58.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea58);
-            legend58.Name = "Legend1";
-            this.chart1.Legends.Add(legend58);
+            chartArea14.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea14);
+            legend14.Name = "Legend1";
+            this.chart1.Legends.Add(legend14);
             this.chart1.Location = new System.Drawing.Point(5, 5);
             this.chart1.Margin = new System.Windows.Forms.Padding(5);
             this.chart1.Name = "chart1";
-            series58.ChartArea = "ChartArea1";
-            series58.Legend = "Legend1";
-            series58.Name = "Series1";
-            this.chart1.Series.Add(series58);
+            series14.ChartArea = "ChartArea1";
+            series14.Legend = "Legend1";
+            series14.Name = "Series1";
+            this.chart1.Series.Add(series14);
             this.chart1.Size = new System.Drawing.Size(590, 240);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -758,12 +761,26 @@
             this.TimerTime.Enabled = true;
             this.TimerTime.Tick += new System.EventHandler(this.TimerTime_Tick);
             // 
+            // ProfileMenu
+            // 
+            this.ProfileMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(180)))), ((int)(((byte)(146)))));
+            this.ProfileMenu.Location = new System.Drawing.Point(1186, 68);
+            this.ProfileMenu.Name = "ProfileMenu";
+            this.ProfileMenu.Size = new System.Drawing.Size(180, 250);
+            this.ProfileMenu.TabIndex = 4;
+            // 
+            // TimerProfile
+            // 
+            this.TimerProfile.Interval = 1;
+            this.TimerProfile.Tick += new System.EventHandler(this.TimerProfile_Tick);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.ProfileMenu);
             this.Controls.Add(this.PanelDashboard);
             this.Controls.Add(this.PanelBienvenida);
             this.Controls.Add(this.PanelStatusBar);
@@ -772,6 +789,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.PanelMenu.ResumeLayout(false);
             this.PanelRelleno.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PbRelleno)).EndInit();
@@ -867,5 +885,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Timer TimerTime;
+        private System.Windows.Forms.Panel ProfileMenu;
+        private System.Windows.Forms.Timer TimerProfile;
     }
 }

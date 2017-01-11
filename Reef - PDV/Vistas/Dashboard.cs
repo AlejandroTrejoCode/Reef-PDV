@@ -12,10 +12,18 @@ namespace Reef___PDV.Vistas
 {
     public partial class Dashboard : Form
     {
-        int despMenu = 4;
+        int ProfileClick = 0;
+        int expand = 0;
+
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            ProfileMenu.Visible = false;
+            ProfileMenu.Location = new Point(1186, 68);            
         }
 
         private void ProfileTag_Click(object sender, EventArgs e)
@@ -139,5 +147,37 @@ namespace Reef___PDV.Vistas
         }
 
         // -- Fin Animaciones de los Menús --
-    }
+
+        public void ProfileClicks()
+        {
+            if (ProfileClick == 1)
+            {
+                ProfileMenu.Visible = true;
+            }
+            else
+            {
+                ProfileClick = 0;
+                ProfileMenu.Visible = false;                
+            }
+        }
+
+        private void ProfileImage_Click(object sender, EventArgs e)
+        {
+            ProfileClick += 1;
+            ProfileClicks();
+            ProfileMenu.Size = new Size(180, 0);
+            TimerProfile.Enabled = true;         
+        }
+        
+        private void TimerProfile_Tick(object sender, EventArgs e)
+        {
+            expand += 2;
+            ProfileMenu.Size = new Size(180, expand);
+            if (expand >= 250)
+            {                
+                TimerProfile.Enabled = false;
+                ProfileMenu.Size = new Size(180, 250);
+            }
+        }
+    }    
 }
